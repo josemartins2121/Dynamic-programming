@@ -6,10 +6,8 @@ unsigned long int fib1(unsigned long int N)
 {
     //printf("F(%lu)\n", N);
     count++;
-    if (!N || N == 1)
-        return N;
-    else
-        return fib1(N - 1) + fib1(N - 2);
+    if (!N || N == 1)return N;
+    else return fib1(N - 1) + fib1(N - 2);
 }
 
 unsigned long int fib2(unsigned long int N,unsigned long int aux[])
@@ -35,7 +33,7 @@ int main()
     count=0;
 
     unsigned long int aux[MAXSIZE];
-    for(unsigned long int i=0;i<MAXSIZE;i++){
+    for(int i=0;i<MAXSIZE;i++){
         aux[i]=-1;
     }
     aux[0]=0;
